@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Yeti</title>
+<title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
@@ -24,35 +24,7 @@
 <body>
     <div class="header_line">
     </div>
-    <!--line menu-->
-    <div class="line1">
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="img/logo.png"></a>
-            </div>
-            <div class="main_menu">
-                <ul>
-                   	  <li><a href="/">Main page</a></li>
-		                <li><a href="/download.html">Download</a></li>
-		                <li><a href="/about_us.html">About Us</a></li>
-		                <li><a href="/contact.html">Contact Information</a></li>
-                </ul>
-            </div>
-            <div class="main_menu_mobile">
-                <div class="captionbutton">
-                    <button id="droop" type="button"><span class="glyphicon glyphicon-align-justify"></span></button>
-                </div>
-            </div>
-        </div>
-        <div class="drop_menu">
-            <ul>
-              	  <li><a href="/">Main page</a></li>
-	                <li><a href="/download.html">Download</a></li>
-	                <li><a href="/about_us.html">About Us</a></li>
-	                <li><a href="/contact.html">Contact Information</a></li>
-            </ul>
-        </div>
-    </div>
+   {% include menu.html %}
    {% include yeti.html %}
     <div class="line3">
     </div>
