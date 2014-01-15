@@ -1,0 +1,41 @@
+- name: SIP SBC with media proxying and transcoding
+  desc: soon
+
+- name: Flexible codec negotiation
+  desc: soon
+
+- name: Pretty web interface for control all system components
+  desc: soon
+
+- name: Comprehensive CDR format
+  desc: soon
+
+- name: Disconnect code rewriting
+  desc: soon
+
+- name: Flexible data importing wizard
+  desc: soon
+
+- name: Easy debugging and call tracing from web interface
+  desc: soon
+
+- name: "Flexible routing designed for lot routes: LCR, quality control"
+  desc: soon
+
+- name: High performance
+  desc: soon
+
+- name: Geo-clustering and redundancy
+  desc: soon
+
+- name: Online reconfiguration without downtime
+  desc: soon
+
+- name: Integrated realtime billing
+  desc: soon
+
+- name: Rate management system and reporting tools
+  desc: soon
+
+- name: Invoice generation
+  desc: soon

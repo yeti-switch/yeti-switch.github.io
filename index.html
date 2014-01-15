@@ -5,24 +5,30 @@ title: YETI - VOIP for humans
 
 
 
-<div class="panel panel-default">
-  <div class="panel-heading"><h2>Features</h2></div>
-  <div class="panel-body">
-    <li class="list-group-item">	 SIP SBC with media proxying and transcoding</li>
- <li class="list-group-item">	  Flexible codec negotiation</li>
- <li class="list-group-item">	  Pretty web interface for control all system components</li>
- <li class="list-group-item">	  Сomprehensive  CDR format</li>
- <li class="list-group-item">	  Disconnect code rewriting</li>
- <li class="list-group-item">	  Flexible data importing wizard</li>
- <li class="list-group-item">	  Easy debugging and call tracing from web interface</li>
- <li class="list-group-item">	  Flexible routing designed for lot routes: LCR, quality control</li>
- <li class="list-group-item">	  High performance</li>
- <li class="list-group-item">	  Geo-clustering and redundancy</li>
- <li class="list-group-item">	  Online reconfiguration without downtime</li>
- <li class="list-group-item">	  Integrated realtime billing</li>
- <li class="list-group-item">	  Rate management system and reporting tools</li>
- <li class="list-group-item">	  Invoice generation</li>
+
+ <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+
+
+
+{% for feature in site.data.features %}
+      <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#feature{{ forloop.index }}">
+            {{ feature.name }}
+        </a>
+      </h4>
+    </div>
+    <div id="feature{{ forloop.index }}" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>
+             {{ feature.desc }}
+        </p>
+      </div>
+    </div>
+{% endfor %}
+
+
   </div>
-</div>
-	
-	
+  
+  </div>
