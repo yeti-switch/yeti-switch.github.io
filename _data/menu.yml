@@ -1,11 +1,11 @@
-- name: Main
-  path: index.html
-
 - name: Download
-  desc: download.html
+  path: "download.html"
 
 - name: About Us
-  desc: ubout_us.html
+  path: "about_us.html"
 
 - name: Features
-  desc: features.html
+  path: "features.html"
+
+- name: Demo
+  path: "demo.html"

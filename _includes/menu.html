@@ -6,10 +6,11 @@
         </div>
         <div class="main_menu">
             <ul>
-               	  <li><a href="/" {% if page.path == "index.html" %}class="active_item"{% endif %}>Main page</a></li>
-	                <li><a href="/download.html" {% if page.path == "download.html" %}class="active_item"{% endif %} >Download</a></li>
-	                <li><a href="/about_us.html" {% if page.path == "about_us.html" %}class="active_item"{% endif %}>About Us</a></li>
-	             
+                 <li><a href="/" {% if page.path == "index.html" %}class="active_item"{% endif %}>Main</a></li>
+                {% for link in site.data.menu %}
+                <li><a href="{{ link.path }}" {% if page.path == link.path %}class="active_item"{% endif %}>
+                    {{ link.name}}</a></li>
+                {% endfor %}
             </ul>
         </div>
         <div class="main_menu_mobile">
@@ -18,12 +19,14 @@
             </div>
         </div>
     </div>
+
     <div class="drop_menu">
         <ul>
-          	  <li><a href="/">Main page</a></li>
-                <li><a href="/download.html">Download</a></li>
-                <li><a href="/about_us.html">About Us</a></li>
-               
+             <li><a href="/">Main</a></li>
+            {% for link in site.data.menu %}
+            <li><a href="{{ link.path }}">{{ link.name }}</a></li>
+            {% endfor %}
+
         </ul>
     </div>
 </div>
