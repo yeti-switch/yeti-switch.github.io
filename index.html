@@ -3,6 +3,8 @@ layout: main
 title: YETI - VOIP for humans
 ---
 
+
+
 <h2 id="features-list">Features</h2>
 
  <div class="panel-group" id="accordion">
@@ -13,12 +15,12 @@ title: YETI - VOIP for humans
 {% for feature in site.data.features %}
       <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#feature{{ forloop.index }}">
+        <a data-toggle="collapse" data-parent="#accordion"  class="accordion-toggle" href="#feature{{ forloop.index }}">
             {{ feature.name }}
         </a>
       </h4>
     </div>
-    <div id="feature{{ forloop.index }}" class="panel-collapse collapse">
+    <div id="feature{{ forloop.index }}" class="panel-collapse collapse {% if forloop.first %}in{% endif %}">
       <div class="panel-body">
         <p>
              {{ feature.desc }}
