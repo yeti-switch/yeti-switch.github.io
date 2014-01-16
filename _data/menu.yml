@@ -1,0 +1,11 @@
+- name: Main
+  path: index.html
+
+- name: Download
+  desc: download.html
+
+- name: About Us
+  desc: ubout_us.html
+
+- name: Features
+  desc: features.html

@@ -1,87 +1,32 @@
 ---
 layout: default
-title: About | YETI - VOIP for humans
+title: Features | YETI - VOIP for humans
 ---
-
+       <h2>Features</h2>
 <div class="row">
 	<div class="col-md-3">
 	 	<ul class="nav nav-pills nav-stacked features_nav" style="max-width: 300px;">
-        	<li class="active"><a href="#">SIP SBC with media proxying and transcoding</a></li>
-        	<li><a href="#d2">Profile</a></li>
-        	<li><a href="#">Messages</a></li>
-        	<li><a href="#">Profile</a></li>
-        	<li><a href="#">Messages</a></li>
-        	<li><a href="#">Profile</a></li>
-        	<li><a href="#">Messages</a></li>
+
+            {% for feature in site.data.features %}
+              <li {% if forloop.first %} class="active" {% endif %} >
+                            <a href="#{{ feature.name | replace:' ','_' }}">{{ feature.name }}</a>
+              </li>
+            {% endfor %}
     	</ul>
 	</div>
+
+
+
 	<div class="col-md-9 info">
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d1">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
-		<div id="d2">
-		<h4>SIP SBC with media proxying and transcoding</h4>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		jhsdbfgjlshdbfljghsbndlfjhg sdfhgsldjfg sdf<br>
-		</div>
+
+        {% for feature in site.data.features %}
+        <div id="{{ feature.name | replace:' ','_' }}">
+                 <h4>{{ feature.name }}</h4>
+
+                {{ feature.desc }}
+            </div>
+            {% endfor %}
+
 
 	</div>
 </div>

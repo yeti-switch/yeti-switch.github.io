@@ -5,31 +5,4 @@ title: YETI - VOIP for humans
 
 
 
-<h2 id="features-list">Features</h2>
-
- <div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-
-
-
-{% for feature in site.data.features %}
-      <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion"  class="accordion-toggle" href="#feature{{ forloop.index }}">
-            {{ feature.name }}
-        </a>
-      </h4>
-    </div>
-    <div id="feature{{ forloop.index }}" class="panel-collapse collapse {% if forloop.first %}in{% endif %}">
-      <div class="panel-body">
-        <p>
-             {{ feature.desc }}
-        </p>
-      </div>
-    </div>
-{% endfor %}
-
-
-  </div>
-    </div>
 
