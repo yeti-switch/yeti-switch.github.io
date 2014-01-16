@@ -201,7 +201,7 @@ html, body {
 }
 .main_button a {
     color: #ffffff;
-    padding: 20px 70px;
+    padding: 20px 120px;
     background-color: #0079B1;
     font-size: 19px;
     font-weight: 300;
@@ -219,7 +219,11 @@ html, body {
     background-color: #005075;
     text-decoration: none;
 }
-
+.login_info {
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 30px
+}
 
 @media (max-width: 992px) {
     .main_menu {
@@ -248,11 +252,6 @@ html, body {
         font-size: 12px;
         padding: 20px
     }
-}
-@media (max-width: 400px) {
-   .main_button {
-    display: none;
-   } 
 }
 
 .panel-heading .accordion-toggle:after {
