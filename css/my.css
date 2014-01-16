@@ -167,9 +167,31 @@ body {
     border-radius: 2px;
     word-break: break-all;
 }
-.copyright {
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -65px 0; /* отрицательный нижний отступ на высоту футера */
+    padding: 0;
+}
+.footer-push, .footer {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.footer p {
     text-align: center;
     color: #ffffff;
+    background-color: #3a414c;
+    padding: 10px;
+    border-top: 5px solid #008ecf;
+    margin-top: 20px;
 }
 
 
