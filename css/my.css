@@ -224,6 +224,9 @@ html, body {
     color: #FFFFFF;
     padding-top: 30px
 }
+.info div:last-child {
+    margin-bottom: 40px
+}
 
 @media (max-width: 992px) {
     .main_menu {
