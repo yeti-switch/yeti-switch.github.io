@@ -4,32 +4,18 @@ title: About | YETI - VOIP for humans
 ---
 
 <h2>About Us</h2>
-
-
-
- <h4>Contact Us</h4>
-
-
+<h4>Contact Us</h4>
 <div class="main_button">
-
-
     <a href="mailto:team@yeti-switch.org">
         <span class="glyphicon glyphicon-envelope"></span>
-
         Email us at team@yeti-switch.org</a>
 </div>
-
-
-
 <h4>Who we are?</h4>
-
 <ul>
 
     {% for member in site.data.members %}
-           <li>
-               {{ member.name }} -   {{ member.role }}
-              </li>
-           {% endfor %}
-
-
+    <li>
+        {{ member.name }} - {{ member.role }}
+    </li>
+    {% endfor %}
 </ul>
