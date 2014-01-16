@@ -127,14 +127,14 @@ body {
     text-align: center;
     font-size: 50px;
     font-weight: 300;
-    padding: 20px;
+    padding-top: 20px;
 }
 .second_slogan {
     color: #ffffff;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 .main_image {
     text-align: center;
@@ -194,6 +194,32 @@ html, body {
     margin-top: 20px;
 }
 
+.main_button {
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+.main_button a {
+    color: #ffffff;
+    padding: 20px 70px;
+    background-color: #0079B1;
+    font-size: 19px;
+    font-weight: 300;
+    border-bottom: 3px solid #45a2da;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.main_button a:hover {
+    background-color: #005075;
+    text-decoration: none;
+}
+
 
 @media (max-width: 992px) {
     .main_menu {
@@ -218,6 +244,15 @@ html, body {
     h2 {
         font-size: 20px!important;
     }
+    .main_button a {
+        font-size: 12px;
+        padding: 20px
+    }
+}
+@media (max-width: 400px) {
+   .main_button {
+    display: none;
+   } 
 }
 
 .panel-heading .accordion-toggle:after {
