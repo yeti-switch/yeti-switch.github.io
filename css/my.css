@@ -253,11 +253,6 @@ html, body {
         padding: 20px
     }
 }
-@media (max-width: 400px) {
-   .main_button {
-    display: none;
-   } 
-}
 
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
