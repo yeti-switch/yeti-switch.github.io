@@ -178,11 +178,11 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 0 -65px 0; /* отрицательный нижний отступ на высоту футера */
+    margin: 0 0 -89px 0; /* отрицательный нижний отступ на высоту футера */
     padding: 0;
 }
 .footer-push, .footer {
-    height: 30px;
+    height: 35px;
     margin: 0;
     padding: 0;
 }
