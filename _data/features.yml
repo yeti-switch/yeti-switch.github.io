@@ -16,6 +16,9 @@
 - name: Disconnect code rewriting
   desc: soon
 
+- name: Data audit
+  desc: soon
+
 - name: Flexible data importing wizard
   desc: |
         Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
@@ -29,9 +32,9 @@
 - name: Easy debugging and call tracing
   desc: soon
 
-- name: Flexible routing
+- name: Flexible routing and rerouting
   desc: soon
-
+  
 - name: High performance
   desc: soon
 
@@ -39,7 +42,9 @@
   desc: soon
 
 - name: Online reconfiguration
-  desc: soon
+  desc: | 
+        There was a problem automatically applying the necessary changes for the YETI SBC nodes after the configuration changes in the database without node restart.
+        To solve this we implemented set of xmlrpc commands which force to reload configuration for each subsystem of node. Then we use events queuee which need to be processed.
 
 - name: Integrated realtime billing
   desc: soon
