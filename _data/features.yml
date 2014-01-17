@@ -4,8 +4,11 @@
 - name: Flexible codec negotiation
   desc: soon
 
-- name: Pretty web interface
-  desc: soon
+- name: Easy to use WEB 2.0 interface
+  desc: |
+        Web interface allows you to manage all possible entities in system including CDRs, reporting, billing, routing, sytem configuration and so on. It was developed using the most poweful and flexible web frameworks like Ruby on Rails and Active Admin. 
+        We were trying to make as easy to use as possible and allow you to access demo of web interface (http://demo.yeti-switch.org).  
+         
 
 - name: Comprehensive CDR format
   desc: soon
@@ -14,7 +17,14 @@
   desc: soon
 
 - name: Flexible data importing wizard
-  desc: soon
+  desc: |
+        Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
+        Flexible settings allow you to not only import the new data , but also to update existing records. 
+        At the same time all data changes made with importing are tracked with our audit/versioning system, as well as for normal data modifications.
+        All import procedures are performed in asynchronous way as background tasks , it allows user to continue to work with the system at this time.
+        Multithreaded implementation significantly accelerates along with the flexibility can significantly reduce the time spent on routine operator price lists.
+        To automate  processing of various formats price lists (very often each vendor uses its own special price lists format) we support data preprocessing scripts. You can develop your own scripts to modify imported data using python,perl,php or any other language. 
+        So import was made to reduce as much as possible the routine work of the operator.
 
 - name: Easy debugging and call tracing
   desc: soon
