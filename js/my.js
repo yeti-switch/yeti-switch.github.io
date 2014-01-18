@@ -1,12 +1,12 @@
 $(document).ready(function() {
-	$('#affix-nav').affix({
-	    offset: {
-	      top: 111
-	    , bottom:  function () {
-	    	        return (this.bottom = $('.bs-footer').outerHeight(true) )
-	     	      }
-	    }
-	  })
+	// $('#affix-nav').affix({
+	//     offset: {
+	//       top: 110
+	//     , bottom:  function () {
+	//     	        return (this.bottom = $('.bs-footer').outerHeight(true) )
+	//      	      }
+	//     }
+	//   })
 	// $('#affix-nav ul').affix({
 	//   offset: '100px';
 	// });

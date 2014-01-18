@@ -183,7 +183,7 @@ body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 0 -89px 0; /* отрицательный нижний отступ на высоту футера */
+    margin: 0 0 -89px 0;  
     padding: 0;
 }
 .footer-push, .footer {
@@ -250,7 +250,15 @@ body {
         display: block;
     }
 }
-@media (max-width: 768px) {
+
+
+@media (max-width: 992px) {
+	
+	.affix, .affix-bottom  {
+		position: static !important;
+	     
+	}
+	
     .main_slogan {
         color: #ffffff;
         text-align: center;
@@ -269,6 +277,10 @@ body {
         font-size: 12px;
         padding: 20px
     }
+	.bs-navbar {
+	    text-align: center  !important;
+	    width: 100%  !important;
+	}
 }
 
 .bs-navbar {
