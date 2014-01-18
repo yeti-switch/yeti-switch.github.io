@@ -1,31 +1,36 @@
 ---
 layout: default
 title: Features | YETI - VOIP for humans
+html_body_attrs: data-spy="scroll" data-target="#affix-nav"
 ---
-       <h2>Features</h2>
+
 <div class="row">
-	<div class="col-md-3">
-	 	<ul class="nav nav-pills nav-stacked features_nav" style="max-width: 300px;">
 
-            {% for feature in site.data.features %}
-              <li {% if forloop.first %} class="active" {% endif %} >
-                            <a href="#{{ feature.name | replace:' ','_' }}">{{ feature.name }}</a>
-              </li>
-            {% endfor %}
-    	</ul>
-	</div>
+	<div  class="col-md-4">
+	    <div id="affix-nav" class="bs-navbar">
 
+	
+				<ul   class="nav nav-pills nav-stacked bs-sidebar hidden-print">
 
+					{% for feature in site.data.features %}
+					<li {% if forloop.first %} class="active" {% endif %} >
+						<a href="#{{ feature.name | replace:' ','_' }}">{{ feature.name }}</a>
+					</li>
+					{% endfor %}
+				</ul>
 
-	<div class="col-md-9 info">
+			</div> 
 
-        {% for feature in site.data.features %}
-        <div id="{{ feature.name | replace:' ','_' }}">
-                 <h4>{{ feature.name }}</h4>
+	</div> 
+	<div class="col-md-8 info">
+		<h2>Features</h2>
+		{% for feature in site.data.features %}
+		<div id="{{ feature.name | replace:' ','_' }}">
+			<h4>{{ feature.name }}</h4>
 
-                <div class="well">{{ feature.desc }}</div>
-            </div>
-            {% endfor %}
+			<div class="well">{{ feature.desc }}</div>
+		</div>
+		{% endfor %}
 
 
 	</div>

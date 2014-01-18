@@ -17,15 +17,16 @@
   desc: soon
 
 - name: Data audit
-  desc: soon
+  desc: We gives you full data auditing and versioning, allow you to see how data looked at any stage in its lifecycle and find out who is responsible for a change. 
+  
 
 - name: Flexible data importing wizard
   desc: |
         Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
         Flexible settings allow you to not only import the new data , but also to update existing records. 
         At the same time all data changes made with importing are tracked with our audit/versioning system, as well as for normal data modifications.
-        All import procedures are performed in asynchronous way as background tasks , it allows user to continue to work with the system at this time.
-        Multithreaded implementation significantly accelerates along with the flexibility can significantly reduce the time spent on routine operator price lists.
+        All import procedures are performed in asynchronous way as background tasks , it allows user to continue to work with the system at the time while processing import.
+        Multithreaded implementation significantly accelerates import time, along with the flexibility can significantly reduce the time spent on routine operation with price lists.
         To automate  processing of various formats price lists (very often each vendor uses its own special price lists format) we support data preprocessing scripts. You can develop your own scripts to modify imported data using python,perl,php or any other language. 
         So import was made to reduce as much as possible the routine work of the operator.
 
@@ -39,7 +40,10 @@
   desc: soon
 
 - name: Geo-clustering and redundancy
-  desc: soon
+  desc: |
+        We use postgresql streaming replication for routing data propagation to remote point of presense. 
+        So calls are  processed by YETI even after loosing connection to the point of presense.
+        YETI SEMS module was designed to support backups of data sources, this ensures the highest level of reliability.
 
 - name: Online reconfiguration
   desc: | 
@@ -50,7 +54,16 @@
   desc: soon
 
 - name: Rate management system and reporting tools
-  desc: soon
+  desc: |
+        Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
+        Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
+        Flexible settings allow you to not only import the new data , but also to update existing records. 
+        At the same time all data changes made with importing are tracked with our audit/versioning system, as well as for normal data modifications.
+        All import procedures are performed in asynchronous way as background tasks , it allows user to continue to work with the system at the time while processing import.
+        Multithreaded implementation significantly accelerates import time, along with the flexibility can significantly reduce the time spent on routine operation with price lists.
+        To automate  processing of various formats price lists (very often each vendor uses its own special price lists format) we support data preprocessing scripts. You can develop your own scripts to modify imported data using python,perl,php or any other language. 
+        So import was made to reduce as much as possible the routine work of the operator.
+        
 
 - name: Invoice generation
   desc: soon

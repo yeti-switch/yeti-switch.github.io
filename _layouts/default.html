@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-       {% include header.html %}
+	{% include header.html %}
 </head>
-<body>
-<div class="wrapper">
-<div class="header_line">
-</div>
+<body {{page.html_body_attrs}}>
+	<div class="wrapper">
+		<div class="header_line">
+		</div>
 
-   {% include menu.html %}
-<div class="line3">
-</div>
-<div class="container">
-    <div class="my_content">
-   	{{ content }}
-    </div>
-</div>
-<div class="footer-push"></div>
-</div>
-<div class="footer">
-{% include footer.html %}
-</div>
+		{% include menu.html %}
+		<div class="line3">
+		</div>
+		<div class="container">
+			<div class="my_content">
+				{{ content }}
+			</div>
+		</div>
+		<div class="footer-push"></div>
+	</div>
+	<div class="footer bs-footer">
+		{% include footer.html %}
+	</div>
 </body>
 </html>
