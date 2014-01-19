@@ -7,19 +7,24 @@
 - name: Easy to use WEB 2.0 interface
   desc: |
         Web interface allows you to manage all possible entities in system including CDRs, reporting, billing, routing, sytem configuration and so on. It was developed using the most poweful and flexible web frameworks like Ruby on Rails and Active Admin. 
-        We were trying to make as easy to use as possible and allow you to access demo of web interface (http://demo.yeti-switch.org).  
+        We were trying to make it as easy to use as possible, also we allow you to access demo of web interface (http://demo.yeti-switch.org).  
          
-
 - name: Comprehensive CDR format
-  desc: soon
-
+  desc: |
+        CDR data has big importantance, it is valuable in resolving conflicts between partners and helps in protocols debugging.
+        We have tried to provide all the necessary data in CDR to give you much information as possible on the one hand,
+        and made it easy to use on the other hand. By default YETI stores CDR record for each rerouting attempt, but you can disable 
+        storing CDR for unauthorized calls , flexible settings allow you to setup behaviour for each disconnect reason. 
+        It is possible to emulate route procedure for each CDR, that makes it easier to debug call flow. 
+        You can also get pcap dump for any CDR if logging is turned on.
+    
 - name: Disconnect code rewriting
   desc: soon
 
 - name: Data audit
-  desc: We gives you full data auditing and versioning, allow you to see how data looked at any stage in its lifecycle and find out who is responsible for a change. 
+  desc: |
+        We gives you full data auditing and versioning, allow you to see how data looked at any stage in its lifecycle and find out who is responsible for a change. 
   
-
 - name: Flexible data importing wizard
   desc: |
         Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
@@ -41,29 +46,20 @@
 
 - name: Geo-clustering and redundancy
   desc: |
-        We use postgresql streaming replication for routing data propagation to remote point of presense. 
-        So calls are  processed by YETI even after loosing connection to the point of presense.
+        We use postgresql streaming replication for routing data propagation to remote point of presense (POP). 
+        So calls are  processed by YETI even after loosing connection to the POP.
         YETI SEMS module was designed to support backups of data sources, this ensures the highest level of reliability.
 
 - name: Online reconfiguration
   desc: | 
         There was a problem automatically applying the necessary changes for the YETI SBC nodes after the configuration changes in the database without node restart.
-        To solve this we implemented set of xmlrpc commands which force to reload configuration for each subsystem of node. Then we use events queuee which need to be processed.
+        To solve this we implemented set of xmlrpc commands which force to reload configuration for each subsystem of node. Also we use queuee for events which need to be processed.
 
 - name: Integrated realtime billing
   desc: soon
 
 - name: Rate management system and reporting tools
   desc: |
-        Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
-        Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
-        Flexible settings allow you to not only import the new data , but also to update existing records. 
-        At the same time all data changes made with importing are tracked with our audit/versioning system, as well as for normal data modifications.
-        All import procedures are performed in asynchronous way as background tasks , it allows user to continue to work with the system at the time while processing import.
-        Multithreaded implementation significantly accelerates import time, along with the flexibility can significantly reduce the time spent on routine operation with price lists.
-        To automate  processing of various formats price lists (very often each vendor uses its own special price lists format) we support data preprocessing scripts. You can develop your own scripts to modify imported data using python,perl,php or any other language. 
-        So import was made to reduce as much as possible the routine work of the operator.
         
-
 - name: Invoice generation
   desc: soon
