@@ -59,7 +59,7 @@
   desc: |
         <p>We use postgresql streaming replication for routing data propagation to remote <a rel="nofollow" target="_blank" href="http://en.wikipedia.org/wiki/Point_of_presence">Point Of Presense</a> (POP). 
         So calls are  processed by <a href ="/#about-yeti">YETI</a> even after loosing connection to the POP.
-        <a href ="/#about-yeti">YETI</a>YETI SEMS module</a> was designed to support backups of data sources, this ensures the highest level of reliability.
+        <a href ="/#about-yeti">YETI</a> SEMS module</a> was designed to support backups of data sources, this ensures the highest level of reliability.
         </p>
         
 - name: Online reconfiguration
