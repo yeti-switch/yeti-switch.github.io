@@ -11,7 +11,7 @@
          
 - name: Comprehensive CDR format
   desc: |
-        CDR data has big importantance, it is valuable in resolving conflicts between partners and helps in protocols debugging.
+        CDR data format has high importantance, it is valuable in resolving conflicts between partners and helps in protocols debugging.
         We have tried to provide all the necessary data in CDR to give you much information as possible on the one hand,
         and made it easy to use on the other hand. By default YETI stores CDR record for each rerouting attempt, but you can disable 
         storing CDR for unauthorized calls , flexible settings allow you to setup behaviour for each disconnect reason. 
