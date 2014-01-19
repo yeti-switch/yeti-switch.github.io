@@ -38,14 +38,14 @@
         So import was made to reduce as much as possible the routine work of the operator.
 
 - name: Easy debugging and call tracing
-  desc: soon
+  desc:| 
+        To simplify system usage, YETI gives opportunity to turn  debugging on and receive Pcap dump for any call via web interface. 
+        So there is no need to provide to staff SSH  access to switch servers . There is also a call emulation mode, which gives you opportunity 
+        to reproduce  routing procedure for emulated call and get debugging information.
 
 - name: Flexible routing and rerouting
   desc: soon
   
-- name: High performance
-  desc: soon
-
 - name: Geo-clustering and redundancy
   desc: |
         We use postgresql streaming replication for routing data propagation to remote point of presense (POP). 
