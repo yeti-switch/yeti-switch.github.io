@@ -19,7 +19,9 @@
         You can also get pcap dump for any CDR if logging is turned on.
     
 - name: Disconnect code rewriting
-  desc: soon
+  desc: |
+        To improve compatibility with other equipments, YETI provides an opportunity 
+        to change the disconnect reason between call legs
 
 - name: Data audit
   desc: |
