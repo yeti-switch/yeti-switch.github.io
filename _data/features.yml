@@ -1,13 +1,13 @@
 - name: Easy to use WEB 2.0 interface
   desc: |
-        <p>Web interface allows you to manage all possible entities in system including CDRs, reporting, billing, routing, sytem configuration and so on. It was developed using the most poweful and flexible web frameworks like 
+        <p>Web interface allows you to manage all possible entities in system including CDRs, reporting, billing, routing, sytem configuration and so on. It was developed using the most poweful and flexible web frameworks such as 
         <a href="http://rubyonrails.org" rel="nofollow" target="_blank">Ruby on Rails</a> and <a href="http://www.activeadmin.info/" rel="nofollow" target="_blank"> Active Admin </a>. 
         We were trying to make it as easy to use as possible, also we allow you to access <a  target="_blank"  href="http://demo.yeti-switch.org"><strong>YETI demo web interface</strong></a>.  
         </p>
          
 - name: Comprehensive CDR format
   desc: |
-        <p>CDR data format has high importantance, it is valuable in resolving conflicts between partners and helps in protocols debugging.
+        <p>CDR data format has high importance, it is valuable in resolving conflicts between partners and helps in protocols debugging.
         We have tried to provide all the necessary data in CDR to give you much information as possible on the one hand,
         and made it easy to use on the other hand. By default <a href ="/#about-yeti">YETI</a> stores CDR record for each rerouting attempt, but you can disable 
         storing CDR for unauthorized calls , flexible settings allow you to setup behaviour for each disconnect reason. 
