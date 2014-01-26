@@ -1,8 +1,9 @@
 - name: Easy to use WEB 2.0 interface
   desc: |
-        <p>Web interface allows you to manage all possible entities in system including CDRs, reporting, billing, routing, sytem configuration and so on. It was developed using the most poweful and flexible web frameworks such as 
+        <p>Our Web interface allows you to manage all possible entities in the system including CDRs, reporting, billing, routing, sytem configuration and others. 
+        It was developed using the most poweful and flexible web frameworks such as 
         <a href="http://rubyonrails.org" rel="nofollow" target="_blank">Ruby on Rails</a> and <a href="http://www.activeadmin.info/" rel="nofollow" target="_blank"> Active Admin </a>. 
-        We were trying to make it as easy to use as possible, also we allow you to access <a  target="_blank"  href="http://demo.yeti-switch.org"><strong>YETI demo web interface</strong></a>.  
+        We’ve tried to make it as easy to use as possible and welcome you to confirm it at our <a  target="_blank"  href="http://demo.yeti-switch.org"><strong>YETI demo web interface</strong></a>. 
         </p>
          
 - name: Comprehensive CDR format
@@ -11,7 +12,7 @@
         We have tried to provide all the necessary data in CDR to give you much information as possible on the one hand,
         and made it easy to use on the other hand. By default <a href ="/#about-yeti">YETI</a> stores CDR record for each rerouting attempt, but you can disable 
         storing CDR for unauthorized calls , flexible settings allow you to setup behaviour for each disconnect reason. 
-        It is possible to emulate route procedure for each CDR, that makes it easier to debug call flow. 
+        It is possible to emulate route procedure for each CDR, that makes it easier to debug a call flow. 
         You can also get pcap dump for any CDR if logging is turned on.
         </p>
         
@@ -24,11 +25,11 @@
         
 - name: Flexible data importing wizard
   desc: |
-        <p>Import Data Wizard allows to make easier to update  billing information & routing configuration in the case of large data capacity.
+        <p>Import Data Wizard allows to easily update  billing information & routing configuration in the case of large data capacity.
         Flexible settings allow you to not only import the new data , but also to update existing records.</p><p> 
-        At the same time all data changes made with importing are tracked with our <a href="#Data_audit">audit/versioning system</a>, as well as for normal data modifications.</p><p> 
-        All import procedures are performed in asynchronous way as background tasks , it allows user to continue to work with the system at the time while processing import.
-        Multithreaded implementation significantly accelerates import time, along with the flexibility can significantly reduce the time spent on routine operation with price lists.
+        At the same time all data changes made with importing are tracked with our <a href="#Data_audit">audit/versioning system</a>, as well as all normal data modifications are.</p><p> 
+        All import procedures are performed in asynchronous way as background tasks , it allows a user to continue to work with the system while processing import is performed.
+        Multithreaded implementation significantly accelerates import time, while flexibility can significantly reduce the time spent on routine operation with price lists.
         </p><p> To automate  processing of various formats price lists (very often each vendor uses its own special price lists format) we support data preprocessing scripts. 
         You can develop your own scripts to modify imported data using python,perl,php or any other language. 
         So import was made to reduce as much as possible the routine work of the operator.
@@ -41,25 +42,25 @@
                 
 - name: Easy debugging and call tracing
   desc: | 
-        <p>To simplify system usage, <a href ="/#about-yeti">YETI</a> gives opportunity to turn  debugging on and receive Pcap dump for any call via web interface. 
-        So there is no need to provide to staff SSH  access to switch servers . There is also a call emulation mode, which gives you opportunity 
-        to reproduce  routing procedure for emulated call and get debugging information.
+        <p>To simplify system usage, <a href ="/#about-yeti">YETI</a> provides an opportunity to turn  debugging on and receive Pcap dump for any call via web interface. 
+        So there is no need to provide your staff with an SSH  access to switch servers . There is also a call emulation mode, 
+        which  allows you to reproduce a routing procedure for an emulated call and get debugging information.
         </p>
         
 - name: Flexible routing and rerouting
   desc: | 
-        <p>The main purpose of <a href ="/#about-yeti">YETI</a> is being a tool for flexible routing control of VOIP traffic. 
-        We support <a rel="nofollow" target="_blank" href="http://en.wikipedia.org/wiki/Least_Cost_Routing">LCR</a> (Least Cost Routing), quality control for each route.
-        Also we developed some non-standard routing modes. To implement the longest prefix match algorithm we used special types of PostgreSQL index, 
+        <p>The main purpose of <a href ="/#about-yeti">YETI</a> is to be a tool for flexible routing control of VOIP traffic. 
+        We support <a rel="nofollow" target="_blank" href="http://en.wikipedia.org/wiki/Least_Cost_Routing">LCR</a> (Least Cost Routing) and quality control for each route.
+        Also we've developed some non-standard routing modes. To implement the longest prefix match algorithm we used special types of PostgreSQL index, 
         it is possible to achieve high performance routing and minimize PDD (Post Dial Delay). 
-        <a href ="/#about-yeti">YETI</a> is designed to work with millions of routes and copes with this task successfully.
+        <a href ="/#about-yeti">YETI</a> is designed to work with millions of routes and performs this task successfully.
         </p>
         
 - name: Geo-clustering and redundancy
   desc: |
-        <p>We use postgresql streaming replication for routing data propagation to remote <a rel="nofollow" target="_blank" href="http://en.wikipedia.org/wiki/Point_of_presence">Point Of Presense</a> (POP). 
-        So calls are  processed by <a href ="/#about-yeti">YETI</a> even after loosing connection to the POP.
-        <a href ="/#about-yeti">YETI</a> SEMS module</a> was designed to support backups of data sources, this ensures the highest level of reliability.
+        <p>Another advantage of our system is usage of postgresql streaming replication for routing data propagation to remote <a rel="nofollow" target="_blank" href="http://en.wikipedia.org/wiki/Point_of_presence">Point Of Presense</a> (POP). 
+        As a result calls are  processed by <a href ="/#about-yeti">YETI</a> even when the connection to the POP is lost.
+        Also <a href ="/#about-yeti">YETI</a> SEMS module</a> was designed to support backups of data sources, this ensures the highest level of reliability.
         </p>
         
 - name: Online reconfiguration
@@ -70,19 +71,20 @@
         
 - name: Integrated realtime billing
   desc: |
-        <p>Billing procedures are performed at the time of CDR recording, this approach minimizes delays and increase reliability. 
-        Database failover increase reliability of CDR recording, it is also possible to record data files, if there is no connection with any of the databases.
+        <p>Billing procedures are performed during CDR recording, this approach minimizes delays and increases billing reliability. 
+        Database failover increases  reliability of CDR recording, it is also possible to record data files,
+         if there is no connection to any of the databases.
         </p>
          
 - name: Rate management system and reporting tools
   desc: |
         <p>Reporting tools make it possible to monitor the system and find problems by analyzing large amount of CDR records. 
-        We are developing reporting tools and adding new features to better contol.
+        Currently we are developing reporting tools and adding new features for better billing control and quality of routes.
         </p>
          
 - name: Invoice generation
   desc: |
-        <p>Invoice generating allows you to automate your settlements with contractors. 
-        Currently invoices generation tools implemented in its base level. 
+        <p>Invoice generation allows you to automate your settlements with contractors. 
+        Currently invoices generation tools are implemented in its basic level. 
         We're working to expand functionality, and  we are planning to implement documents generation in the near future.
         </p>
