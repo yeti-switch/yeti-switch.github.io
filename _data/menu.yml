@@ -9,3 +9,6 @@
 
 - name: Demo
   path: "demo.html"
+
+- name: Slides
+  path: "slides.html"
