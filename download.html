@@ -6,11 +6,11 @@ title: Install | YETI - VOIP for humans
 <h2>How to install</h2>
 <p><h3>Installation from repository</h3></p>
 <p>	Fetch and install the GnuPG key</p>
-        <div class="code_style">
-          	wget -O - http://pkg.yeti-switch.org/keys/yeti-switch.gpg.key | apt-key add -
-        </div>
+<div class="code_style">
+    apt-key adv --keyserver keys.gnupg.net --recv-key 9CEBFFC569A832B6
+</div>
 
 <p>	add these line to your /etc/apt/sources.list</p>	
-   <div class="code_style">
-        deb http://pkg.yeti-switch.org/debian wheezy/
+<div class="code_style">
+    deb http://pkg.yeti-switch.org/debian wheezy/
 </div>	
