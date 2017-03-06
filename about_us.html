@@ -15,7 +15,7 @@ title: About | YETI - VOIP for humans
 
     {% for member in site.data.members %}
     <li>
-         <a href="https://www.linkedin.com/profile/view?id={{member.linkedin}}"><img src="img/icon_linkedin_small.png"/></a> <span>{{ member.name }} - {{ member.role }}</span>
+         <a href="https://www.linkedin.com/{{member.linkedin}}"><img src="img/icon_linkedin_small.png"/></a> <span>{{ member.name }} - {{ member.role }}</span>
     </li>
     {% endfor %}
 </ul>
