@@ -1,14 +1,18 @@
-- name: Download
-  path: "download.html"
-
-- name: About Us
-  path: "about_us.html"
-
 - name: Features
   path: "features.html"
 
 - name: Demo
   path: "demo.html"
 
+- name: Installation
+  path: "docs/installation.html"
+
+- name: Documentation
+  path: "docs"
+
+- name: About Us
+  path: "about_us.html"
+
 - name: Slides
   path: "slides.html"
+
