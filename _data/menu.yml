@@ -10,6 +10,9 @@
 - name: Documentation
   path: "docs"
 
+- name: Community
+  path: "https://community.yeti-switch.org"
+
 - name: About Us
   path: "about_us.html"
 
