@@ -5,8 +5,8 @@ on:
     branches: [ master ]
 
 jobs:
-  linkcheck:
-    name: "Link check"
+  tests:
+    name: "Test build"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,7 +15,7 @@ jobs:
         run: sudo apt install ruby-full build-essential zlib1g-dev
 
       - name: Install jekyll
-        run:  gem install jekyll bundler
+        run: sudo gem install jekyll bundler
 
       - name: Run build
         run: jekyll build

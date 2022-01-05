@@ -15,7 +15,7 @@ jobs:
         run: sudo apt install ruby-full build-essential zlib1g-dev
 
       - name: Install jekyll
-        run:  gem install jekyll bundler
+        run: sudo gem install jekyll bundler
 
       - name: Run build
         run: jekyll build
