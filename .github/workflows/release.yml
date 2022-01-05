@@ -1,0 +1,35 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install ruby
+        run: sudo apt install ruby-full build-essential zlib1g-dev
+
+      - name: Install jekyll
+        run:  gem install jekyll bundler
+
+      - name: Run build
+        run: jekyll build
+
+
+      - name: Save results as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: site-build
+          path: _site/
+
+#      - name: configure
+#        run: rclone config create my-remote webdav url ${{secrets.WEBDAV_URL}} vendor other user '${{secrets.WEBDAV_USER}}'  pass '${{secrets.WEBDAV_PASSWORD}}'
+#
+#      - name: deploy
+#        run: "rclone sync _build my-remote:"
+
