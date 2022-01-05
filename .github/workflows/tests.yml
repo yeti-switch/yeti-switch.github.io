@@ -1,0 +1,22 @@
+name: Tests
+on:
+  pull_request:
+  push:
+    branches: [ master ]
+
+jobs:
+  linkcheck:
+    name: "Link check"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install ruby
+        run: sudo apt install ruby-full build-essential zlib1g-dev
+
+      - name: Install jekyll
+        run:  gem install jekyll bundler
+
+      - name: Run build
+        run: jekyll build
+
