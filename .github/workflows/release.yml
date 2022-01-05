@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: install ruby
-        run: sudo apt install ruby-full build-essential zlib1g-dev
+        run: sudo apt install ruby-full build-essential zlib1g-dev rclone
 
       - name: Install jekyll
         run: sudo gem install jekyll bundler
@@ -27,9 +27,9 @@ jobs:
           name: site-build
           path: _site/
 
-#      - name: configure
-#        run: rclone config create my-remote webdav url ${{secrets.WEBDAV_URL}} vendor other user '${{secrets.WEBDAV_USER}}'  pass '${{secrets.WEBDAV_PASSWORD}}'
-#
-#      - name: deploy
-#        run: "rclone sync _build my-remote:"
+      - name: configure
+        run: rclone config create my-remote webdav url ${{secrets.WEBDAV_URL}} vendor other user '${{secrets.WEBDAV_USER}}'  pass '${{secrets.WEBDAV_PASSWORD}}'
+
+      - name: deploy
+        run: "rclone sync _build my-remote:"
 
