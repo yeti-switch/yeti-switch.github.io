@@ -26,13 +26,13 @@ jobs:
           name: site-build
           path: _site/
 
-      - name: configure
-        run: rclone config create my-remote webdav url ${{secrets.WEBDAV_URL}} vendor other user '${{secrets.WEBDAV_USER}}'  pass '${{secrets.WEBDAV_PASSWORD}}'
+      #- name: configure
+      #  run: rclone config create my-remote webdav url ${{secrets.WEBDAV_URL}} vendor other user '${{secrets.WEBDAV_USER}}'  pass '${{secrets.WEBDAV_PASSWORD}}'
+
+      #- name: deploy
+      #  run: "rclone -I sync _site my-remote:"
 
       - name: deploy
-        run: "rclone -I sync _site my-remote:"
-
-      - name: deploy2
         env:
           S3_ACCESS_KEY: ${{secrets.S3_ACCESS_KEY}}
           S3_SECRET_KEY: ${{secrets.S3_SECRET_KEY}}
