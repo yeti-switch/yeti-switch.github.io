@@ -5,10 +5,10 @@
   path: "demo.html"
 
 - name: Installation
-  path: "docs/installation.html"
+  path: "docs/installation/index.html"
 
 - name: Documentation
-  path: "docs"
+  path: "docs/index.html"
 
 - name: Community
   path: "https://community.yeti-switch.org"
