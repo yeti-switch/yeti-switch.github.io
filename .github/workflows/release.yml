@@ -9,7 +9,7 @@ jobs:
     name: "Build"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: install ruby
         run: sudo apt install ruby-full build-essential zlib1g-dev rclone s4cmd
@@ -21,7 +21,7 @@ jobs:
         run: jekyll build
 
       - name: Save results as artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: site-build
           path: _site/
